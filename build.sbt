@@ -6,7 +6,7 @@ lazy val scalaFaker = (project in file("."))
   .settings(
     name := "scala-faker",
     organization := "it.bitbl",
-    crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.3"),
+    crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.8", "2.13.0"),
     scalaVersion := crossScalaVersions.value.last,
 
     sbtPlugin := false,
@@ -57,7 +57,8 @@ lazy val scalaFaker = (project in file("."))
     scalaBinaryVersion.value match {
       case "2.10" => st("2.10", "2.1.7")
       case "2.11" => st("2.11", "2.1.7")
-      case "2.12" => st("2.12", "3.0.4")
+      case "2.12" => st("2.12", "3.0.8")
+      case "2.13" => st("2.13", "3.0.8")
       case _ => sys.error("ScalaTest not supported for scala version %s!" format version) 
     }
   }

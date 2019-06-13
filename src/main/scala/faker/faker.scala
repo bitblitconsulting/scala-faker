@@ -40,7 +40,7 @@ object Faker {
         val newKey = s.replaceFirst(key + ".", "")
         get(newKey, Option(x.asInstanceOf[java.util.Map[String, AnyRef]].get(key)))
       case Some(x: java.util.List[_]) if s.isEmpty =>
-        Some(x.asInstanceOf[java.util.List[String]].asScala)
+        Some(x.asInstanceOf[java.util.List[String]].asScala.toSeq)
       case Some(x) => None
     }
 
