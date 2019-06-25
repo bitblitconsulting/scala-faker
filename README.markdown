@@ -59,7 +59,7 @@ for the latest stable release:
 
     <dependency>
         <groupId>it.bitbl</groupId>
-        <artifactId>scala-faker_2.12.3</artifactId>
+        <artifactId>scala-faker_2.12</artifactId>
         <version>0.4</version>
     </dependency>
 
@@ -67,11 +67,11 @@ for snapshot:
 
     <dependency>
         <groupId>it.bitbl</groupId>
-        <artifactId>scala-faker_2.12.3</artifactId>
+        <artifactId>scala-faker_2.12</artifactId>
         <version>0.5-SNAPSHOT</version>
     </dependency>
 
-where `2.12.3` is your Scala version.
+where `2.12.x` is your Scala version.
 
 ### Credits
 
